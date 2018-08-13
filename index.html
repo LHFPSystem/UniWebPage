@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8">
+        <title>Unidigital</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="blueberry.css"/>
+        <style type="text/css">
+        *{
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+        body{
+            background: #f0f0f0;
+            font:14px/20px Arial, San-Serif;
+            color: #555 ;
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+            font-size: 180%;
+            line-height: 120%;
+            padding: 5% 0;
+        }
+        h2{
+            text-decoration: underline;
+            line-height: 280;
+            padding-left: 2%;
+        }
+        h3{
+            line-height: 110px;
+            padding: 5% 0;
+
+        }
+        p{
+            padding: 1%;
+        }
+        img {
+            text-align:center;
+            max-width: 35%;
+            height:auto;
+            width: auto;            
+        }
+        a{
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            color: #FFF;
+            text-decoration: underline;            
+        }
+        header {
+            background: #405580;
+            width: 100%;
+            height: 86px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            opacity: 0.90;            
+        }
+        
+        nav {
+            float: right;
+            padding: 30px 20px 20px 0;            
+        }
+        #RealLogo{
+            padding: 2px;
+            max-height: 80px;
+            float: left;
+        }
+        
+        #menu-icon{
+            visibility: hidden;
+            width: 40 px;
+            height: 40px;
+            background:url() center;
+        }
+        a:hover#menu-icon{
+            border-radius: 4px 4px 0 0;
+        }
+        ul{
+            list-style:none
+
+        }
+        nav ul li {
+            display: inline-block;
+            float: left;
+            padding: 10px;
+        }
+        .current {
+            color: #FFF;
+            text-decoration: underline;
+        }
+        #doc {
+            margin: 40px 0;
+
+        }
+        #content{
+            margin: 0 auto;
+            max-width: 1140px;
+            margin-top: 110px;
+        }
+        .blueberry{
+            max-width: 960px;
+            margin-top: 110px;
+        }
+        section {
+            width: 29%;
+            float: left;
+            margin: 2% 2%;
+            text-align: center;
+        }
+        .clear{
+            clear: both;
+        }
+        article{
+            float: left;
+            margin: 0 auto;
+            width: 50%;
+            height: auto;
+            padding:  4%;            
+        }
+        aside{
+            float: right;
+            margin: 0 auto;
+            width: 35%;
+            height: auto;
+            padding:  3%; 
+
+        }
+        ul.gym li {
+            padding-left: 3%;                    
+        }
+        footer{
+            background: #333333;
+            width: 100%;
+            overflow: hidden;
+            opacity: 0.90%;
+        }
+        footer p, footer h3{
+            color: #fff;
+        }
+        foopter p a{
+            color: #FFF;
+            text-decoration: none;
+        }
+        ul.social li{
+            display: inline;
+        }
+        ul.social li img{
+            height: 50px;
+        }
+        footer.second{
+            border-top: 1px solid #4D4E50;
+            background-color: #333333;
+            max-height: 50px;
+            text-align: center;
+            opacity: 0.95;
+
+        }
+
+        /**********************MEDIA***********************/
+        @media screen and (max-width: 478px){
+            body{
+                position:absolute
+            }            
+        }
+        @media screen and (max-width: 740px){
+            header{
+                position:absolute
+            }
+            #menu-icon{
+                display: inline-block;
+            }
+            nav ul, nav:active ul{
+                display: none;
+                position: absolute;
+                padding: 20px;
+                background: #405580;
+                border: 1px solid #fff;
+                right: 20px;
+                top: 60px;
+                width: 50%;
+                border-radius: 2px 0 2px 2px;
+            }
+            nav li {
+                text-align: center;
+                width: 100%;
+                padding: 10px 0;
+                margin: 0;
+            }
+            nav:hover ul{
+                display: block;
+
+            }
+            section{
+                float: left;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            aside{
+                float: left;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            article{
+                float: left;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+        }
+        
+        
+
+
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        <script src="jquery.blueberry.js"></script>
+
+        <script>
+            $(window).load(function(){
+                $(".blueberry" ).blueberry();
+                
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <img id="RealLogo" src="Images/Logo.png">
+            <a href="#" id="logo"></a>
+            <nav>
+                
+                <a href="#" id="logo"></a>
+                
+                <ul>
+                    <li><a href="#" class="current"> Home</a></li>
+                    <li><a href="#"> Quienes somos</a></li>
+                    <li><a href="#"> Productos</a></li>
+                    <li><a href="#"> Servicios</a></li>
+                    <li><a href="#"> Contacto</a></li>
+                    <li><a href="#"> Extras</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <div id="doc">
+            <div id="content">
+                <div class="blueberry">
+                    <ul class="slides">
+                        <li><img src="Images/backgound.jpg"/></li>
+                        <li><img src="Images/More things.jpg"/></li>
+                        <li><img src="Images/More thingys.jpg"/></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section>
+            <img src="http://w3newbie.com/wp-content/uploads/trainers.png"/>
+            <h1>Top-Notch HR</h1>
+            <p>Here in Unidigital have a high-flying staff</p>
+        </section>
+        <section>
+            <img src="http://w3newbie.com/wp-content/uploads/location.png"/>
+            <h1>Location</h1>
+            <p>Our HQ is in Puerto Madero</p>
+        </section>
+        <section>
+                <img src="http://w3newbie.com/wp-content/uploads/check.png"/>
+                <h1>Check us out!</h1>
+                <p>Take a look here to see what we're doing!</p>
+        </section>
+        
+        <div class="clear"></div>
+        <section>
+                <h1>VR Apps</h1>
+                <img src="Images/vr set.jpg"/>
+                <p>We develop VR apps</p>
+        </section>
+        <section>
+                <h1>Augmented Reality</h1>
+                <img src="Images/Augmented Reality.png"/>
+                <p>We develop Augmented Reality apps</p>
+        </section>
+        <section>
+                <h1>Holograms</h1>
+                <img src="Images/holograms.jpg"/>
+                <p>Also Holograms!</p>
+        </section>
+        <footer>
+            <section>
+                <h3><b>Unidigital</b></h3>
+                <p><b>011 4785 4444</b><br><br>
+                Juana Manso 1180<br>
+                CABA<br>
+                Unidigital@account.com</p>
+            </section>
+            <section>
+                <h3>Connect with us!</h3>
+                <ul class="social">
+                    <li><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/facebook1.png"></a></li>
+                    <li><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/googleplus.png"></a></li>
+                    <li><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/twitter1.png"></a></li>
+                    <li><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/youtube1.png"></a></li>
+                </ul>
+            </section>
+            <section>
+                    <img src="Images/More logos.png">
+            </section>
+        </footer>
+        <footer class="second">
+            <p>Copyright Unidigital 2018</p>
+        </footer>
+
+        
+
+    </body>
+</html>
